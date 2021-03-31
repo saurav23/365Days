@@ -24,19 +24,19 @@ public:
 
     bool isEmpty()
     {
-        return (nextIndex == 0);
+        return nextIndex == 0;
     }
 
     // insert element
     void push(int element)
     {
-        if (capacity == nextIndex)
+        if (nextIndex == capacity  )
         {
             cout << " Stack is full.... " << endl;
             return;
         }
 
-        data[nextIndex] == element;
+        data[nextIndex] = element;
         nextIndex++;
     }
 
@@ -47,10 +47,10 @@ public:
         if (isEmpty())
         {
             cout << "Stack is empty" << endl;
-            return INT8_MIN;
+            return INT_MIN;
         }
         nextIndex--;
-        data[nextIndex];
+        return data[nextIndex];
     }
 
     int top()
@@ -58,7 +58,7 @@ public:
         if (isEmpty())
         {
             cout << "Stack is empty" << endl;
-            return INT8_MIN;
+            return INT_MIN;
         }
         return data[nextIndex - 1];
     }
