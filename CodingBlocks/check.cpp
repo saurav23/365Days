@@ -24,14 +24,34 @@ int main()
     // cout << "3th:" << num[3] << endl;
 
     // cout << num[] ;
-    for (int i = 0; i < num.size(); i++){
+    for (int i = 0; i < num.size(); i++)
+    {
         // {   if(i == (num.size()-1)){
         //         cout << num[i] ;
         //     }
         //     if(i<(num.size()-1))
         //     cout << num[i] << " -> ";
         cout << num[i] << "   ";
+    }
+
+    cout << endl;
 }
 
-cout << endl;
+/*
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// solution
+
+// main
+int main()
+{
+
+    //=================================
+    cout << endl;
+    return 0;
 }
+
+*/
