@@ -26,25 +26,56 @@ public:
 
     Stack()
     {
+        head = NULL;
+        size = 0;
     }
 
     int getSize()
     {
+        return size;
     }
 
     bool isEmpty()
     {
+        // if (head == NULL)
+        // {
+        //    return true ;
+        // }
+
+        // else
+        //     return false ;
+
+        return size == 0;
     }
 
-    void push(int element)
+    void push(T element)
     {
+        Node<T> *newNode = new Node<T>(element);
+        newNode->next = head;
+        head = newNode;
+        size++;
     }
 
-    int pop()
+    T pop()
     {
+        if (isEmpty())
+        {
+            return 0;
+        }
+        T ans = head->data;
+        Node<T> *temp = head;
+        head = head->next;
+        delete temp;
+        size--;
+        return ans;
     }
 
-    int top()
+    T top()
     {
+        if(isEmpty())
+        {
+            return 0;
+        }
+        return head-> data ;
     }
 };
