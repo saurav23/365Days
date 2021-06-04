@@ -7,6 +7,7 @@ int main()
 
     stack<int> st;
     int size;
+    cout << "Size :";
     cin >> size;
 
     int x;
@@ -21,10 +22,12 @@ int main()
     // int element2 = st.top();
     // cout << "1:" << element << endl;
     // cout << "2:" << element2;
-
-    while (st.empty())
+    cout << endl;
+    cout << "-----" << endl;
+    while (!st.empty())
     {
-        cout << st.top();
+        cout << "| " << st.top() << " |" << endl;
         st.pop();
+        cout << "-----" << endl;
     }
 }

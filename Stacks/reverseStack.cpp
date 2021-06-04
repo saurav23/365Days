@@ -36,6 +36,7 @@ int main()
 {
     stack<int> st;
     int size;
+    cout << "Size :";
     cin >> size;
 
     int x;
@@ -44,9 +45,26 @@ int main()
         cin >> x;
         st.push(x);
     }
+    cout << "Previous Stack";
+    cout << endl;
+    cout << "-----" << endl;
+    while (!st.empty())
+    {
+        cout << "| " << st.top() << " |" << endl;
+        st.pop();
+        cout << "-----" << endl;
+    }
 
-    // for (int i = 0; i < size; i++)
-    // {
-    //     cout <<  << endl;
-    // }
+    reverse(st);
+
+    cout << "Reversed Stack";
+
+    cout << endl;
+    cout << "-----" << endl;
+    while (!st.empty())
+    {
+        cout << "| " << st.top() << " |" << endl;
+        st.pop();
+        cout << "-----" << endl;
+    }
 }
