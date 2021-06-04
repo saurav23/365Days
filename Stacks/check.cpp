@@ -5,19 +5,26 @@ using namespace std;
 int main()
 {
 
-    /*
-    string s;
-    cin >> s;
+    stack<int> st;
+    int size;
+    cin >> size;
 
-    for (char prnt : s)
+    int x;
+    for (int i = 0; i < size; i++)
     {
-        cout << prnt << endl;
+        cin >> x;
+        st.push(x);
     }
 
-    //-----------------------------
-    cout << endl;
-    return 0;
-    */
+    // int element = st.top();
+    // st.pop();
+    // int element2 = st.top();
+    // cout << "1:" << element << endl;
+    // cout << "2:" << element2;
 
-   
+    while (st.empty())
+    {
+        cout << st.top();
+        st.pop();
+    }
 }
