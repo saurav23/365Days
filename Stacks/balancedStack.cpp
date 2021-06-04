@@ -30,12 +30,11 @@ bool isBalanced(string s)
 
 int main()
 {
-    int t;
-    cin >> t;
-    while (t--)
-    {
-        string s;
-        cin >> s;
-        cout << isBalanced(s) << endl;
-    }
+    // int t;
+    // cin >> t;
+    // while (t--)
+    // {
+    string s;
+    cin >> s;
+    cout << isBalanced(s) << endl;
 }
